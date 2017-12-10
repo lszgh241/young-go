@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "title": "Adidas Outfit",
+  "author": "Jackassss",
+  "date": "2017/12/3 19:05:59",
+  "icon": "/icons/Jackassss.jpg",
+  "products": [
+    {
+      "name": "Adidas sports cloth",
+      "id": "mongoDB _id(x16*1)",
+      "price": "998.00",
+      "src": "/images/cloth.png",
+      "style": {
+        "width": "40%",
+        "top": "15%",
+        "left": "28%",
+        "z-index": "1000",
+        "transform":"rotate(0deg) scale(1)"
+      }
+    },
+    {
+      "name": "Adidas sports pants",
+      "id": "mongoDB _id(x16*2)",
+      "price": "1098.00",
+      "src": "/images/pants.png",
+      "style": {
+        "width": "30%",
+        "top": "35%",
+        "left": "31%",
+        "z-index": "999",
+        "transform":"rotate(0deg) scale(1)"
+      }
+    }
+  ]
+}
