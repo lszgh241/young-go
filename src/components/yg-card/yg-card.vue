@@ -55,17 +55,17 @@ export default {
       var left = this.cardInfos.products[index].style.left;
       var top = this.cardInfos.products[index].style.top;
       if (x > 0) {
-        left = parseFloat(left.split("%")[0]) + 0.1 + "%";
+        left = parseFloat(left.split("%")[0]) + 0.3 + "%";
         product.style.left = left;
       } else if (x < 0) {
-        left = parseFloat(left.split("%")[0]) - 0.1 + "%";
+        left = parseFloat(left.split("%")[0]) - 0.3 + "%";
         product.style.left = left;
       }
       if (y > 0) {
-        top = parseFloat(top.split("%")[0]) + 0.1 + "%";
+        top = parseFloat(top.split("%")[0]) + 0.3 + "%";
         product.style.top = top;
       } else if (y < 0) {
-        top = parseFloat(top.split("%")[0]) - 0.1 + "%";
+        top = parseFloat(top.split("%")[0]) - 0.3 + "%";
         product.style.top = top;
       }
     },
@@ -77,7 +77,7 @@ export default {
       var newDeg =
         "rotate(" +
         (parseFloat(transformRotate.split("(")[1].split("deg")[0]) +
-          parseFloat(rotate) / 5) +
+          parseFloat(rotate) / 2) +
         "deg) " +
         transformScale;
       this.$set(this.cardInfos.products[index].style, "transform", newDeg);
@@ -90,7 +90,7 @@ export default {
         transformRotate +
         " scale(" +
         (parseFloat(transformScale.split("(")[1].split(")")[0]) +
-          parseFloat(scale / 200)) +
+          parseFloat(scale / 100)) +
         ") ";
       this.$set(this.cardInfos.products[index].style, "transform", newScale);
     },
@@ -115,6 +115,8 @@ export default {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
   position: relative;
+  top:7%;
+  overflow:hidden;
   .yg-card-header {
     display: flex;
     .yg-user-icon {

@@ -232,12 +232,13 @@ export default {
   }
   .yg-tool-list {
     position: absolute;
-    left: 100%;
+    left: 120%;
     top: 0%;
-    width: 100%;
+    width: .5rem;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0.2rem;
     text-align: center;
+    z-index:9999;
     .yg-tool-button {
       padding: 9px;
       color: rgba(255, 255, 255, 0.6);

@@ -18,10 +18,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 .yg-container {
+  position:fixed;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding-top:1rem;
+  overflow:hidden;
   &:before {
     content: " ";
     display:block;
